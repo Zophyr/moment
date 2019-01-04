@@ -8,6 +8,8 @@
 
 <p align = "center">[ 00:16:13 ]</p>
 
+------
+
 |  Morning | Noon | Tea time | Night |
 | :---: | :---: | :---: | :---: |
 | ![07:30:30](src/img/073030.png) | ![12:34:56](src/img/123456.png) | ![15:14:50](src/img/151450.png) | ![21:20:40](src/img/212040.png) |

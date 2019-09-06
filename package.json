@@ -1,6 +1,6 @@
 {
   "name": "moment",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "彩色时间 -- Time with Color.",
   "main": "main.js",
   "scripts": {

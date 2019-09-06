@@ -1,0 +1,78 @@
+{
+  "name": "moment",
+  "version": "0.0.1",
+  "description": "彩色时间 -- Time with Color.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zophyr/moment.git"
+  },
+  "keywords": [
+    "design",
+    "time",
+    "electron",
+    "javascript"
+  ],
+  "author": "Zephyr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zophyr/moment/issues"
+  },
+  "homepage": "https://github.com/Zophyr/moment#readme",
+  "build": {
+    "appId": "com.zophyr.moment",
+    "productName": "Moment",
+    "copyright": "Copyright © 2019-2020 ${author}",
+    "directories": {
+      "output": "build"
+    },
+    "asar": true,
+    "artifactName": "${productName}-${version}.${ext}",
+    "compression": "maximum",
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "./img/moment.icns"
+    },
+    "win": {
+      "icon": "./img/moment.ico",
+      "target": "nsis",
+      "legalTrademarks": "BORNING ROOM"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "menuCategory": false,
+      "createDesktopShortcut": true,
+      "allowElevation": false,
+      "perMachine": true
+    },
+    "linux": {
+      "icon": "./img/moment/moment.png"
+    }
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "devDependencies": {
+    "electron": "^6.0.7",
+    "electron-builder": "^21.2.0"
+  }
+}
